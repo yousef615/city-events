@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>City Events</title>
+    <link rel="icon" type="image/x-icon" href="/assets/imagaes/FullLogo_NoBuffer1-removebg-preview.png">
+    <!-- this meta tag is to ensure mobile devices render the page correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  Bootstrap CSS link... -->
+    <link rel="stylesheet" href="assets/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dd2d970582.js" crossorigin="anonymous"></script>
+</head>
+<body class=" event bg-light">
+
+  <!-- scroll to top  -->
+  <button id="scrollToTopBtn" class="btn btn-primary rounded-circle shadow-sm" title="Go to top">
+    <i class="fa-solid fa-angle-up"></i>
+  </button> 
+  
+  <header id="nav" class="mb-3 sticky-top " >
+    <nav  class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home"><img class="logo" src="assets/imagaes/FullLogo_NoBuffer1-removebg-preview.png" alt="" width="140px" height="80px"></a>
+        <div class="fw-semibold ">City Events</div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-2">
+              <a class="  nav-link pt-3 "  href="/index.html">Home</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link pt-3 ss " href="/events.html">Events</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link pt-3 ss active" href="/event.html">Event</a>
+              <li class="nav-item me-2">
+                <a class="nav-link pt-3" href="/about.html">About</a>
+              </li>
+              <li class="nav-item me-2">
+                <a class="nav-link pt-3" href="/contact.html">Contact </a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="Event1">
+      <div id="Event1" class="event-details-section" style="display: none;">
+
+      <div class="container-xl my-5">
+        <!-- Using -->
+        <div class="row bg-white p-4 rounded shadow">
+          <div class="  col-sm-12">
+              <img  src="assets/imagaes/Event1.png" class="img-fluid rounded border" alt="Event1">
+          </div>
+          <div class="col-sm-12">
+              <h1  class="fw-bold mt-2">RSL 25/26 - Al Qadsiah VS Al Ittihad</h1>
+              <div class="d-flex gap-3 mb-3 mt-3">
+                  <span><i class="fa-solid fa-calendar text-info">
+                  </i>Feb 28, 2026 </span>
+                  <span class="text-muted"><i class="fa-solid fa-location-dot text-danger"></i>Prince Mohamed Bin Fahd Stadium</span>
+              </div>
+              <div class="badge bg-warning text-dark fs-6 mb-4">Rate: <span id="detailRate"></span> 4.9 / 5</div>
+              
+              <h4>Experience the RSL 25/26 season match between Al Qadsiah and Al Ittihad live in Dammam.</h4>
+              <p id="detailDesc" class="text-secondary lead fs-6"></p>
+                
+                <div class="mt-4 d-flex gap-2">
+                    <button class="btn btn-info text-white px-4">Add to Calender</button>
+                    <button class="btn btn-outline-secondary px-4"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                </div>
+            </div>
+            <hr class="mt-5">
+        </div>
+        <div class="gallary p-4 row gap-1 bg-white rounded shadow">
+          <h5 class="mb-4">Gallary</h5>
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event11G.png" alt="">
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event12G.png" alt="">
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event13G.png" alt="">
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event14G.png" alt="">
+
+        </div>
+        <div class="related-events mb-5 mt-5">
+          <h2 class="pb-3">Related Events</h2>
+
+          <div class="cards gap-1 d-flex">
+            <div class="card rounded-2 Horses" style="width: 18rem;">
+              <img src="assets/imagaes/relatede31.png" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Wrestling</h5>
+                <p class="card-text"> Al Qadsiah and Al Ittihad live in Dammam. a global festival dedicated to purebred Arabian horses, featuring endurance, speed, and racing competitions. It is held annually in January over</p>
+              </div>
+            </div>
+            <div class="card rounded-2 Horses" style="width: 18rem;">
+              <img src="assets/imagaes/relatede21.png" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dolphins Water Pool</h5>
+                <p class="card-text"> season match between Al Qadsiah and Al Ittihad live in Dammam. Festival is a global festival dedicated to purebred Arabian horses, featuring endurance, speed, and racing competitions. It is held annually in January over</p>
+              </div>
+            </div>
+            <div class="card rounded-2 Horses" style="width: 18rem;">
+              <img src="assets/imagaes/relatede22.png" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lovely Time With Kids</h5>
+                <p class="card-text">Experience the RSL 25/26 season match between Al Qadsiah and Al Ittihad live in Dammam. January over</p>
+              </div>
+            </div>
+          </div>
+          </div>
+    </div>
+  </div>
+    </div>
+
+  <div class="Event2">
+    <div id="Event2" class="event-details-section" style="display: none;">
+
+    <div class="container-xl my-5">
+     
+      <div class="row bg-white p-4 rounded shadow">
+          <div class=" col-sm-12">
+              <img  src="assets/imagaes/Event2.png" class="img-fluid rounded border" alt="Event1">
+          </div>
+          <div class="col-sm-12">
+              <h1  class="fw-bold mt-2">PSAIAHF</h1>
+              <div class="d-flex gap-3 mb-3 mt-3">
+                  <span><i class="fa-solid fa-calendar text-info">
+                  </i>
+                  Jan 10 - 20, 2026 </span>
+                  <span class="text-muted"><i class="fa-solid fa-location-dot text-danger"></i>Al-Duhami Equestrian Cente</span>
+              </div>
+              <div class="badge bg-warning text-dark fs-6 mb-4">Rate: <span id="detailRate"></span> 4.7 / 5</div>
+              
+              <h4>Experience the RSL 25/26 season match between Al Qadsiah and Al Ittihad live in Dammam.</h4>
+              <p id="detailDesc" class="text-secondary lead fs-6"></p>
+                
+                <div class="mt-4 d-flex gap-2">
+                    <button class="btn btn-info text-white px-4">Book Now</button>
+                    <button class="btn btn-outline-secondary px-4"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                </div>
+            </div>
+            <hr class="mt-5">
+        </div>
+        <div class="gallary row gap-1 bg-white rounded shadow p-5">
+          <h5 class="mb-4">Gallary</h5>
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event12G.png" alt="">
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event22.png" alt="">
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event23.png" alt="">
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event24.png" alt="">
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event25.png" alt="">
+
+        </div>
+        <div class="related-events mb-5 mt-5">
+          <h2 class="pb-3">Related Events</h2>
+
+          <div class="cards gap-1 d-flex">
+            <div class="card rounded-2 Horses" style="width: 18rem;">
+              <img src="assets/imagaes/relatede2.png" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Giraffe race Intertainment</h5>
+                <p class="card-text">The Prince Sultan bin Abdulaziz International Arabian Horse Festival is a global festival dedicated to purebred Arabian horses, featuring endurance, speed, and racing competitions. It is held annually in January over</p>
+              </div>
+            </div>
+            <div class="card rounded-2 Horses" style="width: 18rem;">
+              <img src="assets/imagaes/relatede21.png" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dolphins Water Pool</h5>
+                <p class="card-text">The Prince Sultan bin Abdulaziz International Arabian Horse Festival is a global festival dedicated to purebred Arabian horses, featuring endurance, speed, and racing competitions. It is held annually in January over</p>
+              </div>
+            </div>
+            <div class="card rounded-2 Horses" style="width: 18rem;">
+              <img src="assets/imagaes/relatede22.png" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lovely Time With Kids</h5>
+                <p class="card-text">The Prince Sultan bin Abdulaziz International Arabian Horse Festival is a global festival dedicated to purebred Arabian horses, featuring endurance, speed, and racing competitions. It is held annually in January over</p>
+              </div>
+            </div>
+          </div>
+          </div>
+
+        </div>
+    </div>
+  </div>
+
+    <div class="Event3">
+      <div id="Event3" class="event-details-section" style="display: none;">
+
+      <div class="container-xl my-5">
+       
+        <div class="row bg-white p-4 rounded shadow">
+          <div class="  col-sm-12">
+              <img  src="assets/imagaes/Event3.png" class="img-fluid rounded border" alt="Event3">
+          </div>
+          <div class="col-sm-12">
+              <h1  class="fw-bold mt-2">The Seven Floor</h1>
+              <div class="d-flex gap-3 mb-3 mt-3">
+                  <span><i class="fa-solid fa-calendar text-info">
+                  </i>Mar 5 - 12, 2026 </span>
+                  <span class="text-muted"><i class="fa-solid fa-location-dot text-danger"></i>King Fahd Cultural Centre
+                  </span>
+              </div>
+              <div class="badge bg-warning text-dark fs-6 mb-4">Rate: <span id="detailRate"></span> 4.5 / 5</div>
+              
+              <h4>The Seventh Floor - A Bold Social Comedy on Human Nature
+
+                Step into the world of The Seventh Floor, an enthralling social comedy play that dives deep into the inner struggles of characters in search of identity amid tangled ambitions,
+                 clashing desires, and moral dilemmas. Inspired by the symbolism of the Seven Deadly Sins, this unique theatrical performance masterfully blends dark comedy with realistic drama,
+                  offering an honest and thought-provoking reflection of today's society.
+                
+                Audiences will be taken on an emotional journey that balances laughter with introspection, revealing the raw truths of human nature in a way that is both captivating and relatable. 
+                
+                With sharp dialogue, engaging storytelling, and unforgettable performances, The Seventh Floor promises an unforgettable evening for theater lovers and entertainment seekers alike.
+                
+                Don't miss this chance to experience a play that challenges perspectives while keeping you entertained from start to finish.
+                
+                Book your tickets now and be part of an unforgettable night at the theater!</h4>
+              <p id="detailDesc" class="text-secondary lead fs-6"></p>
+                
+                <div class="mt-4 d-flex gap-2">
+                    <button class="btn btn-info text-white px-4">Add to Calender</button>
+                    <button class="btn btn-outline-secondary px-4"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                </div>
+            </div>
+            <hr class="mt-5">
+        </div>
+        <div class="gallary p-4 row gap-1 bg-white rounded shadow">
+          <h5 class="mb-4 ">Gallary</h5>
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event31.png" alt="">
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event32.png" alt="">
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event33.png" alt="">
+
+        </div>
+        <div class="related-events mb-5 mt-5">
+          <h2 class="pb-3">Related Events</h2>
+
+          <div class="cards gap-1 d-flex">
+            <div class="card rounded-2 Horses" style="width: 18rem;">
+              <img src="assets/imagaes/relatede31.png" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Wrestling</h5>
+                <p class="card-text"> Al Qadsiah and Al Ittihad live in Dammam. a global festival dedicated to purebred Arabian horses, featuring endurance, speed, and racing competitions. It is held annually in January over</p>
+              </div>
+            </div>
+            <div class="card rounded-2 Horses" style="width: 18rem;">
+              <img src="assets/imagaes/relatede21.png" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dolphins Water Pool</h5>
+                <p class="card-text"> season match between Al Qadsiah and Al Ittihad live in Dammam. Festival is a global festival dedicated to purebred Arabian horses, featuring endurance, speed, and racing competitions. It is held annually in January over</p>
+              </div>
+            </div>
+            <div class="card rounded-2 Horses" style="width: 18rem;">
+              <img src="assets/imagaes/relatede22.png" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lovely Time With Kids</h5>
+                <p class="card-text">Experience the RSL 25/26 season match between Al Qadsiah and Al Ittihad live in Dammam. January over</p>
+              </div>
+            </div>
+          </div>
+          </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="Event4">
+    <div id="Event4" class="event-details-section" style="display: none;">
+
+    <div class="container-xl my-5">
+     
+      <div class="row bg-white p-4 rounded shadow">
+          <div class=" col-sm-12">
+              <img  src="assets/imagaes/Event4.png" class="img-fluid rounded border" alt="Event1">
+          </div>
+          <div class="col-sm-12">
+              <h1  class="fw-bold mt-2">Sneaker Con</h1>
+              <div class="d-flex gap-3 mb-3 mt-3">
+                  <span><i class="fa-solid fa-calendar text-info">
+                  </i>
+                  Oct 15 - 17, 2026 </span>
+                  <span class="text-muted"><i class="fa-solid fa-location-dot text-danger"></i>Riyadh Exhibition Center
+                  </span>
+              </div>
+              <div class="badge bg-warning text-dark fs-6 mb-4">Rate: <span id="detailRate"></span> 4.8 / 5</div>
+              
+              <h4> Sneaker Con, the world's largest sneaker exhibition, returns to Riyadh for the second time in 2026.
+
+                The biggest gathering of sneaker and streetwear enthusiasts, all in one place, bringing together the rarest global and local sneakers. A live experience centered around buying, selling, and trading the latest and most iconic sneaker releases.
+                
+                The largest showcase of exclusive and rare collectibles, featuring direct meet-ups with influencers and content creators, alongside interactive experiences that reflect the lifestyle and culture of sneaker lovers.
+                Sneaker Con is not just an exhibition, but a space where commerce meets art, connection meets cultural diversity, all at the heart of Riyadh. </h4>
+              <p id="detailDesc" class="text-secondary lead fs-6"></p>
+                
+                <div class="mt-4 d-flex gap-2">
+                    <button class="btn btn-info text-white px-4">Book Now</button>
+                    <button class="btn btn-outline-secondary px-4"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                </div>
+            </div>
+            <hr class="mt-5">
+        </div>
+        <div class="gallary row gap-1 bg-white rounded shadow-lg p-5">
+          <h5 class="mb-4">Gallary</h5>
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event41.png" alt="">
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event42.png" alt="">
+          <img class="col-md-6 col-lg-3" src="assets/imagaes/Event43.png" alt="">
+
+        </div>
+        <div class="related-events mb-5 mt-5">
+          <h2 class="pb-3">Related Events</h2>
+
+          <div class="cards gap-1 d-flex">
+            <div class="card rounded-2 Horses" style="width: 18rem;">
+              <img src="assets/imagaes/relatede2.png" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Giraffe race Intertainment</h5>
+                <p class="card-text">The Prince Sultan bin Abdulaziz International Arabian Horse Festival is a global festival dedicated to purebred Arabian horses, featuring endurance, speed, and racing competitions. It is held annually in January over</p>
+              </div>
+            </div>
+            <div class="card rounded-2 Horses" style="width: 18rem;">
+              <img src="assets/imagaes/relatede21.png" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Dolphins Water Pool</h5>
+                <p class="card-text">The Prince Sultan bin Abdulaziz International Arabian Horse Festival is a global festival dedicated to purebred Arabian horses, featuring endurance, speed, and racing competitions. It is held annually in January over</p>
+              </div>
+            </div>
+            <div class="card rounded-2 Horses" style="width: 18rem;">
+              <img src="assets/imagaes/relatede22.png" class="card-img-top " alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lovely Time With Kids</h5>
+                <p class="card-text">The Prince Sultan bin Abdulaziz International Arabian Horse Festival is a global festival dedicated to purebred Arabian horses, featuring endurance, speed, and racing competitions. It is held annually in January over</p>
+              </div>
+            </div>
+          </div>
+          </div>
+          </div>
+
+        </div>
+    </div>
+    </div>
+   
+
+
+    <footer>
+      <hr>
+      <div class="container-fluid">
+        <img src="assets/imagaes/FullLogo_NoBuffer1-removebg-preview.png" alt="" width="7%" height="7%">
+  
+        cityevents.com2026 &copy;
+        <hr>
+      </div>
+      <div class="footer text-start pt-5 pb-5 fw-200">
+        <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+            <img class="pb-3" src="images/logo.png" alt="">
+            <p class=>Here you can enjoy everything you think of by just booking the event and go at the right time</p>
+            <p class="mt-5 ">Created By <span class="g">Black Pearl</span> <br>
+              &copy; 2026 - <span class="b">City Events</span></p>
+             </div>
+             <div class="col-sm-12 col-md-6 col-lg-4 ps-lg-4 mb-4">
+               <div class="links">
+               <div class="fs-4  fw-bold pb-2">Links</div>
+                 <ul class="fs-6 list-unstyled  lh-lg">
+                   <li><a class="nav-link" href="/index.html">Home</a></li>
+                   <li><a class="nav-link" href="/events.html">Events</a></li>
+                   <li><a class="nav-link" href="/event.html">Event</a></li>
+                   <li><a class="nav-link" href="/about.html">About</a></li>
+                   <li><a class="nav-link" href="/contact.html">Contact</a></li>
+                 </ul>
+               </div>
+             </div>
+             
+             <div class="col-sm-12 col-md-6 col-lg-4">
+               <div class="contact-us">
+               <div class="fs-4  fw-bold pb-3">Contact Us </div>
+                 <p class="pb-5">Get in touch with us via mail phone.
+                   We are waiting for your call or message</p>
+                 </div>
+                 <button class="main-btn w-100 rounded-pill"><a href="/contact.html" >www.yousef712.com@gmail.com</a></button>
+                 <ul class=" social d-flex list-unstyled gap-3 mt-3 p-0">
+                   <li > <a href="#" class="d-block  "><i class="fa-brands fa-facebook fa-lg rounded-circle facebook p-2 align-items-center"></i> </a>
+                   </li>
+                   <li > <a href="#" class="d-block text-dark "><i class="fa-brands  fa-x-twitter fa-lg rounded-circle twitter p-2 align-items-center"></i> </a>
+                   </li>
+                   <li > <a href="#" class="d-block "><i class="fa-brands fa-linkedin fa-lg rounded-circle linkedin p-2 align-items-center"></i> </a>
+                   </li>
+                   <li > <a href="#" class="d-block text-danger "><i class="fa-brands fa-youtube fa-lg rounded-circle youtube p-2 align-items-center"></i> </a>
+                   </li>
+                   
+                 </ul>
+               </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+      <!-- Bootstrap JS bundle with Popper -->
+      <script src="assets/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+</body>
+</html>

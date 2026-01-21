@@ -1,0 +1,265 @@
+:root {
+    --main-text-color: rgb(0 0 0 / 98%);
+    --background-main-color: #f7f7f7;
+}
+body {
+    /* background-color: black!important; */
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: var(--main-text-color) !important;
+background-color: var(--background-main-color) !important;  }
+
+#scrollToTopBtn {
+  display: none; 
+  position: fixed; 
+  color: rgb(6, 1, 38);
+  bottom: 20px; 
+  right: 20px; 
+  z-index: 1000; 
+  width: 50px; 
+  height: 50px; 
+  padding: 0;
+  line-height: 1; 
+}
+
+
+header {
+  background: linear-gradient(to left, rgb(182, 226, 245), rgb(226, 235, 240));
+  border-bottom: 1px solid rgb(121, 241, 205) ;
+  transition: 1s ease-in-out;
+  height: 100px ;
+}
+header.active {
+transform: translateY(-100%);
+transition: 1s ease-in-out;
+}
+
+header button{ 
+  background-color: rgb(65, 95, 92) !important;
+  box-shadow: none !important;
+}
+
+header i {
+  color: #00ffc6bd ;
+  width: 100%;
+  height: 100%;
+}
+
+header .active {
+  font-weight: bold;
+}
+header a {
+    font-size: 20px;
+    font-weight:400;
+    color: var(--main-text-color) !important;
+}
+@media (min-width:992px) {
+header .navbar-nav {
+  padding-bottom: 10px !important;
+}
+}
+@media (max-width:991px) {
+header .navbar-nav {
+  background: linear-gradient(to left, rgb(182, 226, 245), rgb(226, 235, 240));
+  padding: 20px;
+}
+}
+/* table designed in css */
+
+/* Team Table Styling */
+.custom-team-table thead {
+  background: linear-gradient(to left, rgb(168, 223, 247), rgb(34, 93, 125)) !important;
+}
+
+.custom-team-table tbody tr {
+  transition: background-color 0.3s ease;
+  vertical-align: middle;
+}
+
+.custom-team-table tbody tr:hover {
+  background-color: rgba(13, 202, 240, 0.05);
+}
+
+.custom-team-table td {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-color: #f1f1f1;
+}
+
+.text-primary {
+  color: #0dcaf0 !important; 
+}
+
+.table-responsive {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+
+/* Start Home css  */
+
+.badges  {
+  width: 98%;
+}
+.badges div:hover {
+  cursor: pointer;
+}
+
+
+.this-week-slider-container {
+  width: 85%;
+  max-width: 100%; 
+  margin: auto;
+  overflow: hidden; 
+  position: relative;
+}
+
+.this-week-slider-container .slide-wrapper {
+  display: flex;
+  transition: transform 1s ease-in-out;
+  width: fit-content;
+}
+
+.slide {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.this-week-slider-container .nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.this-week-slider-container .prev {
+  left: 10px;
+}
+
+.this-week-slider-container .next {
+  right: 10px;
+}
+
+.latest-events .cards {
+  width: 99%;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  
+}
+
+.latest-events .card {
+  border: none;
+  min-width: 25%;
+    
+}
+@media (max-width:1100px){
+  .latest-events .card {
+    min-width: 40%;
+  }
+}
+@media (max-width:720px){
+  .latest-events .card {
+    min-width: 50%;
+  }
+}
+@media (max-width:550px){
+  .latest-events .card {
+    min-width: 90%;
+  }
+}
+
+
+.latest-events .card .card-text{
+  opacity: 0.6;
+}
+
+.latest-events .card:hover {
+    transform: translateY(-1%);
+    border: 1px solid var(--main-text-color);
+  }
+
+  
+  footer {
+    background: linear-gradient(to top, rgb(204, 217, 223), rgb(226, 235, 240));
+    
+  }
+  footer .links a {
+    color: black;
+  }
+  footer .main-btn a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* Start Event css  */
+
+  .event .gallary img {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* Start About css */
+
+  
+  .icon-circle {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    color: #0dcaf0;
+    transition: 0.3s; 
+  }
+
+  .card:hover .icon-circle {
+    background-color: #0dcaf0;
+     color: white; 
+    }
+
+
+.team-initials {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; 
+  background-color: #f8f9fa;
+}
+
+.team-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+
+
+
+   /* Start Contact css */
+
+
+   .icon-box { width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; }
+
+.social-btn {
+    width: 45px; height: 45px; border-radius: 50%; display: flex;
+    align-items: center; justify-content: center; background: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); color: #333; transition: 0.3s; text-decoration: none;
+}
+.social-btn:hover { transform: translateY(-3px); color: #0dcaf0; }
+
+.form-control:focus {
+    border-color: #0dcaf0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.25);
+}
